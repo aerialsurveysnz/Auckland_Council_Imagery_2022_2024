@@ -102,7 +102,7 @@
           var popupContent = document.createElement('div');
           popupContent.innerHTML = description;
 
-          var popup = new mapboxgl.Popup({ closeButton: false, closeOnClick: false })
+          var popup = new mapboxgl.Popup({ closeOnClick: false })
             .setLngLat(coordinates)
             .setDOMContent(popupContent)
             .addTo(map);
@@ -196,7 +196,7 @@
           var popupContent = document.createElement('div');
           popupContent.innerHTML = description;
 
-          var popup = new mapboxgl.Popup({ closeButton: false, closeOnClick: false })
+          var popup = new mapboxgl.Popup({  closeOnClick: false })
             .setLngLat(coordinates)
             .setDOMContent(popupContent)
             .addTo(map);
